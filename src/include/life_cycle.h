@@ -2,7 +2,7 @@
 
 #define LIFE_CYCLE_H
 
-#define MATRIX_SIZE 5;
+#define MATRIX_SIZE 1500;
 
 void ProcessInitialization(
   double **pMatrix,

@@ -9,4 +9,4 @@ release:
 	${CC} ${SRC} -Wall -o build/release/main -fopenmp
 
 run: release
-	./build/release/main -fopenmp
+	./build/release/main
