@@ -61,6 +61,7 @@ void ParallelGaussianElimination(double *pMatrix, double *pVector, int Size) {
 }
 
 void BackSubstitution(double *pMatrix, double *pVector, double *pResult, int Size) {
+  #pragma omp parallel for shared(pMatrix, pVector, pResult) num_threads(NUM_THREADS)
   for (int i = Size - 1; i >= 0; i--) {
     pResult[i] = pVector[i];
 
